@@ -1,0 +1,25 @@
+{
+  "name": "@ensoci/social-media-api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./modules/account": "./src/modules/account/index.ts",
+    "./modules/post": "./src/modules/post/index.ts",
+    "./modules/schedule": "./src/modules/schedule/index.ts",
+    "./modules/analytics": "./src/modules/analytics/index.ts",
+    "./modules/template": "./src/modules/template/index.ts"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "npm run build -w @cxapp/framework && tsc -p tsconfig.json --noEmit",
+    "lint": "eslint src --ext .ts"
+  },
+  "dependencies": {
+    "@cxapp/framework": "^1.0.63",
+    "fastify": "^5.2.1",
+    "kysely": "^0.29.0",
+    "zod": "^4.4.3"
+  }
+}

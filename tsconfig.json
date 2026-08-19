@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {},
+  "files": [],
+  "references": [
+    { "path": "./apps/social-media/api" },
+    { "path": "./apps/social-media/web" }
+  ]
+}
